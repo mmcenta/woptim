@@ -81,6 +81,7 @@ if __name__ == "__main__":
         args.gamma * cp.sum(target_weights @ cp.square(x - target))
     )
 
+    # Solve problem
     prob = cp.Problem(cp.Minimize(objective), constraints)
     prob.solve()
 
