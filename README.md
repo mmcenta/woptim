@@ -16,7 +16,7 @@ The **requirements** property should be a list of objects with the following pro
 
 * **name**: the name of the person;
 * **interval**: the interval of acceptable values for this person. It should be a list with two numbers [lower, upper];
-* **target**: the ideal value for this person. It can be a number and or either the strings *lower*, *center*, *upper*, which denote the lower bound, the center, and the upper bound of the interval.
+* **target**: the ideal value for this person. It can be either a number or the strings *lower*, *center*, *upper*, which denote the lower bound, the center, and the upper bound of the interval.
 
 For example:
 ```json
