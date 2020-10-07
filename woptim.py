@@ -72,9 +72,9 @@ if __name__ == "__main__":
             return np.ones_like(arr)
         return np.where((1. / arr) > max_weight, max_weight, (1. / arr))
 
-    lower_weights = get_weights(lower, absolute=args.absolute)
-    upper_weights = get_weights(upper, absolute=args.absolute)
-    target_weights = get_weights(target, absolute=args.absolute)
+    lower_weights = get_weights(lower, args.absolute)
+    upper_weights = get_weights(upper, args.absolute)
+    target_weights = get_weights(target, args.absolute)
     objective = (
         cp.sum(lower_weights @ cp.square(cp.pos(lower - x))) +
         cp.sum(upper_weights @ cp.square(cp.pos(x - upper))) +
@@ -85,7 +85,7 @@ if __name__ == "__main__":
     prob = cp.Problem(cp.Minimize(objective), constraints)
     prob.solve()
 
-    # Print result.
+    # Print result
     print("\nThe optimal value is", prob.value)
     print("A solution is:")
     sol = x.value
