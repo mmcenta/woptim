@@ -76,8 +76,8 @@ if __name__ == "__main__":
     upper_weights = get_weights(upper, absolute=args.absolute)
     target_weights = get_weights(target, absolute=args.absolute)
     objective = (
-        cp.sum(lower_weights @ cp.square(cp.neg(x - lower))) +
-        cp.sum(upper_weights @ cp.square(cp.neg(x - lower))) +
+        cp.sum(lower_weights @ cp.square(cp.pos(lower - x))) +
+        cp.sum(upper_weights @ cp.square(cp.pos(x - upper))) +
         args.gamma * cp.sum(target_weights @ cp.square(x - target))
     )
 
