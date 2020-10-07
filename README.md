@@ -40,9 +40,9 @@ For example:
 
 ## Method
 
-This program works with *convex optimization* to minimize a custom convex function that models each person's discontent with a convex function to be minimized.
+This program works with *convex optimization* to minimize a custom convex function that models each person's discontent.
 
-First, suppose that the constraints are satisfiable: the total amount is between the sum of lower bounds and the sum of upper bounds. Let <img src="https://i.upmath.me/svg/l" alt="l" />, <img src="https://i.upmath.me/svg/u" alt="u" />, and <img src="https://i.upmath.me/svg/t" alt="t" /> be the vectors of lower bounds, upper bounds, and targets, respectively. A first reflex is to solve the following problem:
+First, suppose that the constraints are satisfiable: the total amount is between the sum of lower bounds and the sum of upper bounds. Let <img src="https://i.upmath.me/svg/l" alt="l" />, <img src="https://i.upmath.me/svg/u" alt="u" />, and <img src="https://i.upmath.me/svg/t" alt="t" /> be the vectors of lower bounds, upper bounds, and targets, respectively. A solution is:
 
 <img src="https://i.upmath.me/svg/x%5E*%20%3D%20%5Carg%5Cmin_x%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D(x_i%20-%20t_i)%5E2" alt="x^* = \arg\min_x \sum_{i=1}^{N}(x_i - t_i)^2" />
 
