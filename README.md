@@ -2,7 +2,7 @@
 
 Using optimization to solve allocation problems.
 
-This program solves the problem of allocating T units of something to N different people, each one with a target they prefer and acceptable ranges.
+This program solves the problem of allocating T units of something to N different people, each one with a preferred target and acceptable intervals.
 
 ## Input Specification
 
@@ -12,7 +12,7 @@ This program accepts as input a JSON file containing the total number of units, 
 * **price**: (Optional) price paid for the total amount of goods. If provided, the program outputs how much each person should pay;
 * **requirements**: the preferences of each person;
 
-The *requirements* property should be a list of objects with the following properties:
+The **requirements** property should be a list of objects with the following properties:
 
 * **name**: the name of the person;
 * **interval**: the interval of acceptable values for this person. It should be a list with two numbers [lower, upper];
