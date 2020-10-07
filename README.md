@@ -64,7 +64,7 @@ where <img src="https://i.upmath.me/svg/(.)_%2B%20%3A%3D%20%5Cmax(0%2C%20.)" alt
 
 <img src="https://i.upmath.me/svg/E(x)%20%3D%20%5Cgamma%20%5Csum_%7Bi%3D1%7D%5E%7BN%7Dw_i%5Et(x_i%20-%20t_i)%5E2%20%2B%20%5Csum_%7Bi%3D1%7D%5E%7BN%7Dw_i%5El(l_i%20-%20x_i)_%2B%5E2%20%2B%20%5Csum_%7Bi%3D1%7D%5E%7BN%7Dw_i%5Eu(x_i%20-%20u_i)_%2B%5E2%2C" alt="E(x) = \gamma \sum_{i=1}^{N}w_i^t(x_i - t_i)^2 + \sum_{i=1}^{N}w_i^l(l_i - x_i)_+^2 + \sum_{i=1}^{N}w_i^u(x_i - u_i)_+^2," />
 
-where the weights <img src="https://i.upmath.me/svg/w%5El" alt="w^l" /> and <img src="https://i.upmath.me/svg/w%5Eu" alt="w^u" /> are calculated similarly to <img src="https://i.upmath.me/svg/w%5Et" alt="w^t" />. By removing the unsatisfiable constraints and optimizing the objective funtions above, we solve these cases.
+where the weights <img src="https://i.upmath.me/svg/w%5El" alt="w^l" /> and <img src="https://i.upmath.me/svg/w%5Eu" alt="w^u" /> are calculated similarly to <img src="https://i.upmath.me/svg/w%5Et" alt="w^t" />. By removing the unsatisfiable constraints and optimizing the objective functions above, we solve these cases.
 
 ## Usage
 
